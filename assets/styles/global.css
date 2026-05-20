@@ -27,3 +27,8 @@ body {
   font-size: 1.125rem;
   line-height: 1.2;
 }
+
+.main {
+  max-width: 1216px;
+  margin-inline: auto;
+}
