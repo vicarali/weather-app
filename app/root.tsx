@@ -23,8 +23,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-				<Header />
-				<main className="main">{children}</main>
+				<div className="inner-wrapper">
+					<Header />
+					<main className="main">{children}</main>
+				</div>
 				<ScrollRestoration />
 				<Scripts />
 			</body>

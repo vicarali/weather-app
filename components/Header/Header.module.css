@@ -1,0 +1,17 @@
+.header {
+  padding-top: var(--spacing-200);
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: var(--spacing-300);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: var(--spacing-600);
+  }
+}

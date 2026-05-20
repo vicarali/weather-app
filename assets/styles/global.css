@@ -1,20 +1,20 @@
 @font-face {
   font-family: "dm-sans";
-  src: url("../../assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "dm-sans";
-  src: url("../../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: "bricolage-grotesque";
-  src: url("../../assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf") format("ttf");
+  src: url("../fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -28,7 +28,14 @@ body {
   line-height: 1.2;
 }
 
-.main {
+.inner-wrapper {
   max-width: 1216px;
   margin-inline: auto;
+  padding-inline: var(--spacing-200);
+}
+
+@media screen and (min-width: 768px) {
+  .inner-wrapper {
+    padding-inline: var(--spacing-300);
+  }
 }

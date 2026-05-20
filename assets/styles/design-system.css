@@ -57,6 +57,13 @@
   font-weight: bold;
   font-size: 3.25rem;
   line-height: 1.2;
+  text-align: center;
+  margin-top: var(--spacing-600);
+}
+@media screen and (min-width: 1440px) {
+  .text-preset-2 {
+    margin-top: var(--spacing-800);
+  }
 }
 .text-preset-3 {
   font-family: "dm-sans";

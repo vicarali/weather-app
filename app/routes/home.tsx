@@ -9,5 +9,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-	return <></>;
+	return (
+		<>
+			<h1 className="text-preset-2">How’s the sky looking today?</h1>
+		</>
+	);
 }
