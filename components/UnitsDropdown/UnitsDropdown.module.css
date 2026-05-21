@@ -1,0 +1,16 @@
+.unitsOptionsDropdownToggle {
+  display: flex;
+  gap: var(--spacing-125);
+  padding: var(--spacing-150) var(--spacing-200);
+  border-radius: var(--radius-8);
+  background-color: var(--neutral-800);
+  cursor: pointer;
+}
+
+.unitsOptionsDropdownToggle[aria-expanded="false"] + .unitsOptionsDropdown {
+  display: none;
+}
+
+.unitsOptionsDropdownToggle[aria-expanded="true"] + .unitsOptionsDropdown {
+  display: flex;
+}
