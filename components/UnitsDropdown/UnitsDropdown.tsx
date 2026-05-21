@@ -12,7 +12,7 @@ export function UnitsDropdown(): ReactElement {
 	}
 
 	return (
-		<div>
+		<div className={`${styles.wrapper} text-preset-7`}>
 			<button
 				id="units-options-dropdown-toggle"
 				aria-expanded={unitsOptionsDropdownOpen}
@@ -29,31 +29,58 @@ export function UnitsDropdown(): ReactElement {
 				aria-labelledby="units-options-dropdown-toggle"
 				className={styles.unitsOptionsDropdown}
 			>
-				<button>Switch to Imperial</button>
-				<h2 id="temperature-title">Temperature</h2>
-				<ul role="group" aria-labelledby="temperature-title">
-					<li role="option" aria-selected="true">
+				<button className={styles.unitTypeToggle}>Switch to Imperial</button>
+				<h2
+					id="temperature-title"
+					className={`${styles.unitGroupTitle} text-preset-8`}
+				>
+					Temperature
+				</h2>
+				<ul
+					role="group"
+					aria-labelledby="temperature-title"
+					className={styles.unitGroup}
+				>
+					<li role="option" aria-selected="true" className={styles.unitOption}>
 						Celsius (°C)
 					</li>
-					<li role="option" aria-selected="false">
+					<li role="option" aria-selected="false" className={styles.unitOption}>
 						Fahrenheit (°F)
 					</li>
 				</ul>
-				<h2 id="wind-speed-title">Wind Speed</h2>
-				<ul role="group" aria-labelledby="wind-speed-title">
-					<li role="option" aria-selected="true">
+				<h2
+					id="wind-speed-title"
+					className={`${styles.unitGroupTitle} text-preset-8`}
+				>
+					Wind Speed
+				</h2>
+				<ul
+					role="group"
+					aria-labelledby="wind-speed-title"
+					className={styles.unitGroup}
+				>
+					<li role="option" aria-selected="true" className={styles.unitOption}>
 						km/h
 					</li>
-					<li role="option" aria-selected="false">
+					<li role="option" aria-selected="false" className={styles.unitOption}>
 						mph
 					</li>
 				</ul>
-				<h2 id="precipitation-title">Precipitation</h2>
-				<ul role="group" aria-labelledby="precipitation-title">
-					<li role="option" aria-selected="true">
+				<h2
+					id="precipitation-title"
+					className={`${styles.unitGroupTitle} text-preset-8`}
+				>
+					Precipitation
+				</h2>
+				<ul
+					role="group"
+					aria-labelledby="precipitation-title"
+					className={styles.unitGroup}
+				>
+					<li role="option" aria-selected="true" className={styles.unitOption}>
 						Millimeters (mm)
 					</li>
-					<li role="option" aria-selected="false">
+					<li role="option" aria-selected="false" className={styles.unitOption}>
 						Inches (in)
 					</li>
 				</ul>

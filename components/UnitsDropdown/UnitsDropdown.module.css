@@ -1,3 +1,7 @@
+.wrapper {
+  position: relative;
+}
+
 .unitsOptionsDropdownToggle {
   display: flex;
   gap: var(--spacing-125);
@@ -12,5 +16,50 @@
 }
 
 .unitsOptionsDropdownToggle[aria-expanded="true"] + .unitsOptionsDropdown {
-  display: flex;
+  display: block;
+}
+
+.unitsOptionsDropdown {
+  min-width: 13.375rem;
+  position: absolute;
+  right: 0;
+  margin-top: var(--spacing-125);
+  border-radius: var(--radius-12);
+  background-color: var(--neutral-800);
+  padding: var(--spacing-075) var(--spacing-100);
+  white-space: nowrap;
+}
+
+.unitTypeToggle {
+  padding: var(--spacing-125) var(--spacing-100);
+  cursor: pointer;
+}
+
+.unitGroupTitle {
+  padding-top: var(--spacing-125);
+  margin-top: var(--spacing-050);
+  margin-inline: var(--spacing-100);
+  color: var(--neutral-300);
+  border-top: solid var(--neutral-600) 1px;
+}
+
+.unitOption {
+  padding: var(--spacing-125) var(--spacing-100);
+  cursor: pointer;
+}
+
+.unitOption[aria-selected="true"] {
+  background-color: var(--neutral-700);
+  border-radius: var(--radius-8);
+  position: relative;
+}
+
+.unitOption[aria-selected="true"]::after {
+  content: url("../../assets/images/icon-checkmark.svg");
+  position: absolute;
+  right: var(--spacing-100);
+}
+
+.unitGroup {
+  margin-top: var(--spacing-100);
 }
