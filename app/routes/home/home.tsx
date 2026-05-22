@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
-import { Header } from "../../components/Header/Header";
+import { PlaceSearcher } from "../../../components/PlaceSearcher/PlaceSearcher";
+import styles from "./home.module.css";
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -12,6 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<h1 className="text-preset-2">How’s the sky looking today?</h1>
+			<PlaceSearcher className={styles.placeSearcher} />
 		</>
 	);
 }

@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  gap: var(--spacing-150);
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    gap: var(--spacing-200);
+    flex-direction: row;
+  }
+}
+
+.input {
+  background-color: var(--neutral-800);
+  padding: var(--spacing-200) var(--spacing-300);
+  border-radius: var(--radius-12);
+}
+
+.input::before {
+  content: url("../../assets/images/icon-search.svg");
+}

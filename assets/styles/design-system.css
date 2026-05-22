@@ -59,6 +59,7 @@
   line-height: 1.2;
   text-align: center;
   margin-top: var(--spacing-600);
+  white-space: break-spaces;
 }
 @media screen and (min-width: 1440px) {
   .text-preset-2 {

@@ -1,0 +1,10 @@
+.placeSearcher {
+  margin-top: var(--spacing-600);
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .placeSearcher {
+    margin-top: var(--spacing-800);
+  }
+}
