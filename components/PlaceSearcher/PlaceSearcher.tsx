@@ -8,11 +8,13 @@ type PlaceSearcherProps = {
 export function PlaceSearcher({ className }: PlaceSearcherProps): ReactElement {
 	return (
 		<div className={`${styles.wrapper} ${className} text-preset-5-medium`}>
-			<input
-				type="text"
-				placeholder="Search for a place..."
-				className={styles.input}
-			/>
+			<div className={styles.inputContainer}>
+				<input
+					type="text"
+					placeholder="Search for a place..."
+					className={styles.input}
+				/>
+			</div>
 			<button className={styles.button}>Search</button>
 		</div>
 	);

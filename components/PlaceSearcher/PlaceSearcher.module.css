@@ -10,13 +10,44 @@
     flex-direction: row;
   }
 }
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    margin-inline: auto;
+    width: fit-content;
+  }
+}
+
+.inputContainer {
+  position: relative;
+}
+.inputContainer::before {
+  content: url("../../assets/images/icon-search.svg");
+  position: absolute;
+  left: 24px;
+  top: 18px;
+}
+@media screen and (max-width: 1439px) {
+  .inputContainer {
+    flex-grow: 1;
+  }
+}
 
 .input {
   background-color: var(--neutral-800);
-  padding: var(--spacing-200) var(--spacing-300);
+  padding: var(--spacing-200) var(--spacing-300) var(--spacing-200) var(--spacing-800);
   border-radius: var(--radius-12);
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .input {
+    max-width: 32.875rem;
+  }
 }
 
-.input::before {
-  content: url("../../assets/images/icon-search.svg");
+.button {
+  background-color: var(--blue-500);
+  padding: var(--spacing-200) var(--spacing-300);
+  border-radius: var(--radius-12);
+  cursor: pointer;
 }
+
