@@ -1,0 +1,43 @@
+.wrapper {
+  padding: var(--spacing-500) var(--spacing-300);
+  background: url("../../assets/images/bg-today-small.svg");
+  background-size: cover;
+  border-radius: var(--radius-20);
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: var(--spacing-1000) var(--spacing-300);
+    background: url("../../assets/images/bg-today-large.svg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textWrapper {
+    text-align: center;
+  }
+}
+
+.date {
+  margin-top: var(--spacing-150);
+}
+
+.weatherWrapper {
+  display: flex;
+  gap: var(--spacing-250);
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:767px) {
+  .weatherWrapper {
+    margin-top: var(--spacing-200);
+  }
+}
+
+/* .weatherImg {
+  width: 7.5rem;
+  height: 7.5rem;
+} */
