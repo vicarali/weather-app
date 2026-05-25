@@ -16,3 +16,12 @@
     margin-top: var(--spacing-600);
   }
 }
+
+.placeDetails {
+  margin-top: var(--spacing-250);
+}
+@media screen and (min-width: 1440px) {
+  .placeDetails {
+    margin-top: var(--spacing-400);
+  }
+}

@@ -1,0 +1,28 @@
+.list {
+  display: grid;
+  gap: var(--spacing-200);
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    gap: var(--spacing-250);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .list {
+    gap: var(--spacing-300);
+  }
+}
+
+.item {
+  padding: var(--spacing-250);
+  border-radius: var(--radius-12);
+  background-color: var(--neutral-800);
+  border: solid 1px var(--neutral-600);
+  flex-grow: 1;
+}
+
+.itemValue {
+  margin-top: var(--spacing-300);
+}

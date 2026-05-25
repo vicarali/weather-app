@@ -26,6 +26,12 @@ body {
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.2;
+  padding-bottom: var(--spacing-600);
+}
+@media screen and (min-width: 1440px) {
+  body {
+    padding-bottom: var(--spacing-1000);
+  }
 }
 
 .inner-wrapper {
