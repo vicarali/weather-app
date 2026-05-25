@@ -3,6 +3,7 @@ import { PlaceSearcher } from "../../../components/PlaceSearcher/PlaceSearcher";
 import styles from "./home.module.css";
 import { PlaceCard } from "../../../components/PlaceCard/PlaceCard";
 import { PlaceDetails } from "../../../components/PlaceDetails/PlaceDetails";
+import { DailyForecast } from "../../../components/DailyForecast/DailyForecast";
 
 export function meta({}: Route.MetaArgs) {
 	return [
@@ -19,6 +20,10 @@ export default function Home() {
 			<section aria-label="Today's weather">
 				<PlaceCard className={styles.placeCard} />
 				<PlaceDetails className={styles.placeDetails} />
+			</section>
+			<section className={styles.dailyForecastSection}>
+				<h2 className="text-preset-5">Daily forecast</h2>
+				<DailyForecast className={styles.dailyForecast} />
 			</section>
 		</>
 	);

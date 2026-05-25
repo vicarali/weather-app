@@ -1,0 +1,33 @@
+.list {
+  display: grid;
+  gap: var(--spacing-200);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+  }
+}
+
+.item {
+  padding: var(--spacing-200) var(--spacing-125);
+  border-radius: var(--radius-12);
+  background-color: var(--neutral-800);
+  border: solid 1px var(--neutral-600);
+  flex-grow: 1;
+}
+
+.itemTitle {
+  text-align: center;
+}
+
+.weatherImg {
+  margin-top: var(--spacing-200);
+  margin-inline: auto;
+}
+
+.temperatureWrapper {
+  margin-top: var(--spacing-200);
+  display: flex;
+  justify-content: space-between;
+}

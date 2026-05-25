@@ -25,3 +25,16 @@
     margin-top: var(--spacing-400);
   }
 }
+
+.dailyForecastSection {
+  margin-top: var(--spacing-400);
+}
+@media screen and (min-width: 1440px) {
+  .dailyForecastSection {
+    margin-top: var(--spacing-600);
+  }
+}
+
+.dailyForecast {
+  margin-top: var(--spacing-250);
+}
