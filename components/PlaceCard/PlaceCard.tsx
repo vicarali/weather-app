@@ -2,13 +2,9 @@ import type { ReactElement } from "react";
 import styles from "./PlaceCard.module.css";
 import sunnyImg from "../../assets/images/icon-sunny.webp";
 
-type PlaceCardProps = {
-	className: string;
-};
-
-export function PlaceCard({ className }: PlaceCardProps): ReactElement {
+export function PlaceCard(): ReactElement {
 	return (
-		<div className={`${styles.wrapper} ${className}`}>
+		<div className={styles.wrapper}>
 			<div className={styles.textWrapper}>
 				<h2 className="text-preset-4">Berlin, Germany</h2>
 				<p className={styles.date}>Tuesday, Aug 5, 2025</p>

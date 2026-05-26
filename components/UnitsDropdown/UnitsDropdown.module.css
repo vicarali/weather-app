@@ -28,6 +28,7 @@
   background-color: var(--neutral-800);
   padding: var(--spacing-075) var(--spacing-100);
   white-space: nowrap;
+  border: solid 1px var(--neutral-600);
 }
 
 .unitTypeToggle {

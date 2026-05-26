@@ -1,3 +1,18 @@
+.placeWrapper {
+  display: flex;
+  gap: var(--spacing-400);
+  flex-direction: column;
+}
+@media screen and (min-width: 1440px) {
+  .placeWrapper {
+    flex-direction: row;
+  }
+}
+
+.placeWrapper > * {
+  flex-grow: 1;
+}
+
 .placeSearcher {
   margin-top: var(--spacing-600);
   margin-inline: auto;
@@ -8,13 +23,19 @@
   }
 }
 
-.placeCard {
+.placeWrapper {
   margin-top: var(--spacing-400);
 }
 @media screen and (min-width: 1440px) {
-  .placeCard {
+  .placeWrapper {
     margin-top: var(--spacing-600);
   }
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .placeDetails {
