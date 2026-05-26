@@ -16,7 +16,7 @@ export function DailyForecast({ className }: DailyForecastProps): ReactElement {
 	);
 }
 
-function DailyForecastItem() {
+function DailyForecastItem(): ReactElement {
 	return (
 		<li className={styles.item}>
 			<h3 className={styles.itemTitle}>Tue</h3>
