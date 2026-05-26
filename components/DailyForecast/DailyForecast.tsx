@@ -5,18 +5,18 @@ import weatherImg from "../../assets/images/icon-rain.webp";
 export function DailyForecast({ className }: DailyForecastProps): ReactElement {
 	return (
 		<ol className={`${styles.list} ${className}`}>
-			<DailyForecastCard />
-			<DailyForecastCard />
-			<DailyForecastCard />
-			<DailyForecastCard />
-			<DailyForecastCard />
-			<DailyForecastCard />
-			<DailyForecastCard />
+			<DailyForecastItem />
+			<DailyForecastItem />
+			<DailyForecastItem />
+			<DailyForecastItem />
+			<DailyForecastItem />
+			<DailyForecastItem />
+			<DailyForecastItem />
 		</ol>
 	);
 }
 
-function DailyForecastCard() {
+function DailyForecastItem() {
 	return (
 		<li className={styles.item}>
 			<h3 className={styles.itemTitle}>Tue</h3>
