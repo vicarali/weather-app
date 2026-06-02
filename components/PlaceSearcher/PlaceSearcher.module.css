@@ -40,7 +40,7 @@
 }
 @media screen and (min-width: 1440px) {
   .input {
-    max-width: 32.875rem;
+    min-width: 32.875rem;
   }
 }
 
