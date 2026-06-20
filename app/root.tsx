@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "../assets/styles/app.css";
 import { Header } from "../components/Header/Header";
+import { PlaceContextProvider } from "../contexts/PlaceContext";
 
 export const links: Route.LinksFunction = () => [];
 
@@ -24,8 +25,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<div className="inner-wrapper">
-					<Header />
-					<main className="main">{children}</main>
+						<PlaceContextProvider>
+							<Header />
+							<main className="main">{children}</main>
+						</PlaceContextProvider>
 				</div>
 				<ScrollRestoration />
 				<Scripts />
