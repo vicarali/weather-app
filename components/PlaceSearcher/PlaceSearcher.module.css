@@ -1,17 +1,21 @@
-.wrapper {
+.container {
+  position: relative;
+}
+
+.formWrapper {
   display: flex;
   gap: var(--spacing-150);
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
+  .formWrapper {
     gap: var(--spacing-200);
     flex-direction: row;
   }
 }
 @media screen and (min-width: 1440px) {
-  .wrapper {
+  .formWrapper {
     margin-inline: auto;
     width: fit-content;
   }

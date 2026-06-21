@@ -3,6 +3,7 @@ import styles from "./PlaceSearcher.module.css";
 import type { City } from "../../types/City";
 import { getCities } from "../../api/getCities";
 import { useQuery } from "@tanstack/react-query";
+import { PlaceSearcherResults } from "../PlaceSearcherResults/PlaceSearcherResults";
 
 type PlaceSearcherProps = {
 	className: string;
@@ -22,8 +23,11 @@ export function PlaceSearcher({ className }: PlaceSearcherProps): ReactElement {
 	}
 
 	return (
-		<search className={`${className} text-preset-5-medium`}>
-			<form className={styles.wrapper} onSubmit={(e) => handlePlaceSearch(e)}>
+		<search className={`${styles.container} ${className} text-preset-5-medium`}>
+			<form
+				className={styles.formWrapper}
+				onSubmit={(e) => handlePlaceSearch(e)}
+			>
 				<div className={styles.inputContainer}>
 					<input
 						type="text"
@@ -37,15 +41,5 @@ export function PlaceSearcher({ className }: PlaceSearcherProps): ReactElement {
 			</form>
 			{queriedPlaces && <PlaceSearcherResults places={queriedPlaces} />}
 		</search>
-	);
-}
-
-function PlaceSearcherResults({ places }: { places: City[] }): ReactElement {
-	return (
-		<ul>
-			{places.map((place) => (
-				<li key={place.id}>{`${place.name}, ${place.country}`}</li>
-			))}
-		</ul>
 	);
 }
