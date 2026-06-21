@@ -10,9 +10,11 @@ import {
 import type { Route } from "./+types/root";
 import "../assets/styles/app.css";
 import { Header } from "../components/Header/Header";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { PlaceContextProvider } from "../contexts/PlaceContext";
 
 export const links: Route.LinksFunction = () => [];
+const queryClient = new QueryClient();
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
@@ -25,10 +27,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			</head>
 			<body>
 				<div className="inner-wrapper">
+					<QueryClientProvider client={queryClient}>
 						<PlaceContextProvider>
 							<Header />
 							<main className="main">{children}</main>
 						</PlaceContextProvider>
+					</QueryClientProvider>
 				</div>
 				<ScrollRestoration />
 				<Scripts />
